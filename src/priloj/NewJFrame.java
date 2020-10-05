@@ -166,6 +166,7 @@ public class NewJFrame extends javax.swing.JFrame {
                 ResultSet rt = st.executeQuery("SELECT [ФИО исполнителя], [Junior(мин.ЗП)], [Middle(мин.ЗП)], [Senior(мин.ЗП)], [Коэффициент для Анализ и проектирование], [Коэффициент для Установка оборудования], [Коэффициент для Техническое обслуживание и сопровождение], [Коэффициент времени], [Коэффициент сложности], [Коэффициент для перевода в денежный эквивалент] FROM users WHERE [Логин менеджера] = '"+login.getText()+"' AND Пароль = '"+password.getText()+"'");
                 if(rt.next()){
                     JOptionPane.showMessageDialog(loginPanel, "Вы вошли");
+                    
 
                     mdm.setRowCount(0);
                     do{
